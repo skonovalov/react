@@ -1,5 +1,6 @@
 var path              = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: './index.js',
@@ -18,6 +19,19 @@ module.exports = {
                 options: {
                     presets: ['es2015', 'react']
                 }
+            },
+
+            {
+                test: /\.css$/,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" }
+                ]
+            },
+
+            {
+                test: /\.css/,
+                loader: ExtractTextPlugin.extract("./src/assets/index.css")
             }
         ]
     },
