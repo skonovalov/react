@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 100px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h4 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #008000;
+    color: #fff;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+}
+
+thead {
+    background: #eee;
+}
+
+th, td {
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(2n) {
+    background: #ececec;
+}
+
+a {
+    color: #333;
+}
+
+a.active {
+    color: #3b92ca;
+}

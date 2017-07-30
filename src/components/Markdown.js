@@ -17,7 +17,7 @@ export default class Markdown extends React.Component{
 
     render() {
         return (
-            <div>
+            <div className = "container">
                 <div className="input">
                     <textarea
                         onChange={this.handleChange}

@@ -23,21 +23,19 @@ module.exports = {
 
             {
                 test: /\.css$/,
-                use: [
-                    { loader: "style-loader" },
-                    { loader: "css-loader" }
-                ]
-            },
-
-            {
-                test: /\.css/,
-                loader: ExtractTextPlugin.extract("./src/assets/index.css")
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader"
+                })
             }
         ]
     },
 
-    plugins: [new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: './src/assets/index.html'
-    })]
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/assets/index.html'
+        }),
+        new ExtractTextPlugin("index.css")
+    ]
 };

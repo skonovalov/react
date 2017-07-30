@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 /*components*/
-import Markdown from './src/components/Markdown';
+import Leaderboard from './src/components/Leaderboard';
 /*end components*/
 
+import './src/assets/leaderboard.css';
+
 ReactDOM.render(
-  <Markdown />,
+  <Leaderboard url='leaderboard.json'/>,
   document.getElementById('app')
 );
