@@ -16,7 +16,9 @@
     "babel-preset-react": "^6.24.1",
     "marked": "^0.3.6",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-modal": "^2.2.3",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.1"
   },

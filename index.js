@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 /*components*/
-import Leaderboard from './src/components/Leaderboard';
+import Recipe from './src/components/recipe/Recipe';
 /*end components*/
 
-import './src/assets/leaderboard.css';
+/* import './src/assets/leaderboard.css'; */
+// import './src/assets/recipe.css';
 
 ReactDOM.render(
-  <Leaderboard url='leaderboard.json'/>,
+  <Recipe />,
   document.getElementById('app')
 );
